@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/bsmg/BSIPA-MetadataFileSchema/master/Schema.json",
+  "id": "BeatFramer",
+  "name": "BeatFramer",
+  "author": "Dri0m",
+  "version": "0.1.0",
+  "description": "Performance optimizer and experimental 3-draw-call custom lightweight renderer for Beat Saber 1.44.1 (built for Steam Frame, works on x86_64 PCVR too).",
+  "gameVersion": "1.44.1",
+  "dependsOn": {
+    "BSIPA": "^4.3.0",
+    "SiraUtil": "^3.1.0",
+    "BeatSaberMarkupLanguage": "^1.11.0"
+  },
+  "links": {
+    "project-home": "https://github.com/Dri0m/beatframer",
+    "project-source": "https://github.com/Dri0m/beatframer"
+  }
+}

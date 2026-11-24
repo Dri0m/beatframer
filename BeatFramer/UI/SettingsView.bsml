@@ -1,0 +1,18 @@
+<settings-container xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='https://monkeymanboy.github.io/BSML-Docs/BSMLSchema.xsd'>
+  <dropdown-list-setting text="Renderer Mode" value="mode" choices="mode-options" apply-on-change="true" hover-hint="Optimized = stock renderer minus heavy GPU passes; LiteRenderer = experimental 3-draw-call batched renderer with live lights; Stock = vanilla for A/B testing" />
+  <slider-setting text="VR Render Viewport Scale" value="render-scale" min="0.6" max="1.2" increment="0.05" apply-on-change="true" hover-hint="Scales VR eye render viewport resolution (1.0 = native)" />
+  <toggle-setting text="Disable Desktop Mirror Blit" value="disable-desktop-mirror" apply-on-change="true" hover-hint="Stops Unity from blitting VR eyes to the desktop window every frame" />
+  <toggle-setting text="Disable Floor Reflections (Mirror)" value="disable-floor-mirror" apply-on-change="true" hover-hint="Skips the 2nd full-scene reflection render pass while keeping the dark floor" />
+  <toggle-setting text="Disable MainEffect Post-Process" value="disable-post-process" apply-on-change="true" hover-hint="Bypasses HDR Pyramid/Kawase Bloom to avoid offscreen RenderTarget blits" />
+  <toggle-setting text="Downscale Bloom Pre-Pass (4x fewer px)" value="downscale-bloom-prepass" apply-on-change="true" hover-hint="Halves BloomPrePass width/height; keeps light glow looking nearly identical at 25% pixel cost" />
+  <toggle-setting text="Disable Bloom Pre-Pass" value="disable-bloom-prepass" apply-on-change="true" hover-hint="Skips BloomPrePass light glow texture completely" />
+  <toggle-setting text="Optimize Saber Trails" value="optimize-saber-trails" apply-on-change="true" hover-hint="Caps trail mesh granularity/sampling to cut per-frame CPU/vertex upload cost" />
+  <toggle-setting text="Pause GC During Gameplay" value="disable-gameplay-gc" apply-on-change="true" hover-hint="Disables GC mid-song to eliminate stutters and collects cleanly on menu return" />
+  <toggle-setting text="Disable Screen Grab Passes" value="disable-grab-passes" apply-on-change="true" hover-hint="Disables full-screen blur/distortion grab passes on walls" />
+  <toggle-setting text="Disable Saber Burn Marks" value="disable-burn-marks" apply-on-change="true" hover-hint="Skips per-frame burn mark RenderTexture blits" />
+  <toggle-setting text="Disable Note Debris" value="disable-debris" apply-on-change="true" />
+  <toggle-setting text="Disable Cut Particles" value="disable-cut-particles" apply-on-change="true" />
+  <toggle-setting text="LiteRenderer: Environment Lights" value="lite-env-lights" apply-on-change="true" hover-hint="Draw neon rails, rings, and lasers driven by LightWithIdManager" />
+  <toggle-setting text="LiteRenderer: Saber Trails" value="lite-saber-trails" apply-on-change="true" />
+  <toggle-setting text="Log Frame-Time Benchmarks" value="enable-perf-logger" apply-on-change="true" hover-hint="Writes AvgFPS, 1% Low, P95/P99 ms to UserData/BeatFramer/perf.log" />
+</settings-container>
